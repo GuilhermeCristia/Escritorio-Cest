@@ -1,0 +1,242 @@
+body{
+    font-family: Arial;
+    overflow: auto;
+    background-color: white;
+}
+
+.container{
+    max-width: 1920px;
+    width: 100%;
+}
+
+header{
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+nav{
+    top: 15px;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+}
+
+nav:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container{
+    max-width: 1400px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo{
+    width: 105px;
+    height: 85px;
+    margin-top: 0px;
+}
+
+.nav-container ul{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+
+}
+
+.nav-container li{
+    list-style: none;
+    float: left;
+    margin: 0 65.85px;
+    text-align: center;
+    
+}
+
+#login {
+    background: #000000;
+    border: none;
+	height: 50px;
+	width: 180px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 0 70px;
+
+}
+
+#login a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+
+.nav-container li a{
+    font-family: Arial;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 5;
+}
+
+/* Barra de Navegação */
+
+.titulo{
+    margin: 0;
+    border: 0;
+}
+.area-login{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 20px;
+    margin-left: 170px;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login input{
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.login img{
+    width: 90px;
+    height: auto;
+    
+}
+input ::placeholder{
+    color: black;
+    font-size: 14px;
+}
+label{
+    color: white;
+    margin-top: 10px;
+}
+form [type="submit"]{
+    display: block;
+    background-color: #5568FE;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+p{
+    color: white;
+}
+a{
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.animação{
+    width: 600px;
+    margin-left: 100px;
+    display: flex;
+   
+}
+
+/* Rodape */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.conteudo{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo h1{
+    font-size: 15vw;
+    text-transform: uppercase;
+}
+footer{
+    width: 100%;
+    min-height: 250px;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+img{
+    width: 10rem;
+}
+footer .box{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+    margin-left: 200px;
+}
+footer .box:nth-child(4){
+    width: 400px;
+}
+.box h4{
+    color: white;
+    margin-bottom: 20px;
+}
+.box ul li{
+    margin: 10px;
+    list-style: none;
+}
+.box ul li a{
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+}
+.box ul li a :hover{
+    color: #fff;
+}
+.box p{
+    color: rgb(194, 194, 194);
+    text-align: justify;
+}
+.gp{
+    margin-top: 15px;
+}
+
+.logobranca{
+    margin: 40px;
+}
+
+@media(max-width:950px){
+    footer{
+      flex-direction: column;
+    }
+    footer .box{
+        width: 320px;
+        min-height: 150px;
+        padding: 20px;
+        text-align: center;
+    }
+    footer .box p{
+        text-align: center;
+    }
+}
